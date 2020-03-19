@@ -1,4 +1,4 @@
-package io.github.manuelernesto.meukumbu.ui
+package io.github.manuelernesto.meukumbu.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

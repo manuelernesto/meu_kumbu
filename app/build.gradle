@@ -67,6 +67,7 @@ dependencies {
     implementation 'org.kodein.di:kodein-di-framework-android-x:6.2.1'
 
     implementation('androidx.preference:preference-ktx:1.1.0')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
 
 }

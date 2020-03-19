@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Meu Kumbu</string>
+    <string name="begin_text">Começar</string>
+    <string name="meu_kumbu_logo">Meu Kumbu Logo</string>
 </resources>

@@ -3,6 +3,7 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
       <module name="app" target="1.8" />
+      <module name="Meu_Kumbu.app" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
