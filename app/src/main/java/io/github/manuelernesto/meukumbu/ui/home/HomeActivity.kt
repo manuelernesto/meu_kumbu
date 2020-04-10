@@ -8,11 +8,13 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.squareup.picasso.Picasso
 import com.squareup.picasso.Target
 import io.github.manuelernesto.meukumbu.R
 import io.github.manuelernesto.meukumbu.util.CircleTransform
 import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.mk_settings.*
 
 class HomeActivity : AppCompatActivity() {
 
@@ -57,5 +59,37 @@ class HomeActivity : AppCompatActivity() {
             .into(target)
         menuI.setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_IF_ROOM)
         return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            PROFILE_ICON_ID -> settings()
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+
+    private fun settings() {
+        val mBottomSheetDialog = BottomSheetDialog(this, R.style.BottomSheetDialogTheme)
+        val dialogLayout = layoutInflater.inflate(R.layout.mk_settings, null)
+        mBottomSheetDialog.setContentView(dialogLayout)
+        mBottomSheetDialog.setCancelable(true)
+        mBottomSheetDialog.show()
+
+//
+//        val header = dialogLayout.findViewById<TextView>(R.id.rating_header_tv)
+//
+//        val btnSair = dialogLayout.findViewById<Button>(R.id.cancel_btn_pontos)
+//        val btnShare = dialogLayout.findViewById<Button>(R.id.share_btn_ideia)
+//
+//        val txt = dialogLayout.findViewById<EditText>(R.id.ideia_share_txt)
+//        val process = dialogLayout.findViewById<ProgressBar>(R.id.progressBarRating)
+
+
+//        btnSair.setOnClickListener {
+//            mBottomSheetDialog.dismiss()
+//        }
+
+
     }
 }

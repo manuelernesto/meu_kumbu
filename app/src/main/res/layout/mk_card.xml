@@ -11,7 +11,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/meu_kumbu_card_bg_green">
+        android:background="@drawable/meu_kumbu_card_bg_gray">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -32,6 +32,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
+            android:fontFamily="monospace"
             android:text="Saldo"
             android:textColor="@android:color/white"
             app:layout_constraintStart_toStartOf="parent"
@@ -41,6 +42,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="monospace"
             android:text="10.000,00 Kz"
             android:textColor="@android:color/white"
             android:textSize="24sp"
@@ -54,6 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
+            android:fontFamily="monospace"
             android:text="Proprietario"
             android:textColor="@android:color/white"
             app:layout_constraintBottom_toTopOf="@+id/textView4"
@@ -63,6 +66,7 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="monospace"
             android:text="Manuel Ernesto"
             android:textColor="@android:color/white"
             android:textSize="24sp"
@@ -75,6 +79,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
+            android:fontFamily="monospace"
             android:text="Validade:"
             android:textColor="@android:color/white"
             app:layout_constraintBottom_toTopOf="@+id/textView6"
@@ -85,6 +90,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
+            android:fontFamily="monospace"
             android:text="12/20"
             android:textColor="@android:color/white"
             android:textSize="24sp"
@@ -96,8 +102,9 @@
             android:id="@+id/textView7"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:fontFamily="monospace"
             android:gravity="center_horizontal"
-            android:text="****         ****           ****          1234"
+            android:text="****  ****  ****  1234"
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="24sp"

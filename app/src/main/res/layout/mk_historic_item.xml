@@ -29,7 +29,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:picture="@{historic.img}"
-            tools:srcCompat="@drawable/mercado"
+            tools:srcCompat="@drawable/mercado_"
 
             />
 
@@ -40,12 +40,16 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:text="@{historic.company}"
+            android:textColor="@color/colorText"
             android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="normal"
             app:layout_constraintStart_toEndOf="@+id/img"
             app:layout_constraintTop_toTopOf="@+id/img"
             tools:text="Mercado 3.0" />
 
         <TextView
+            android:textColor="@color/colorText"
             android:id="@+id/txt_category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -63,17 +67,18 @@
             android:layout_marginRight="16dp"
             android:text="@{historic.values}"
             android:textColor="#EF5350"
-            android:textSize="20sp"
+            android:textSize="14sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/txt_category"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/txt_name"
             tools:text="- 50.000,00" />
 
         <View
-            android:background="@color/color_background"
             android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginTop="5dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="#0D37474F"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/img" />
     </androidx.constraintlayout.widget.ConstraintLayout>

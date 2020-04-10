@@ -1,13 +1,13 @@
 package io.github.manuelernesto.meukumbu.ui.home
 
 import android.os.Build
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import io.github.manuelernesto.meukumbu.R
 import io.github.manuelernesto.meukumbu.data.Historic
@@ -21,7 +21,7 @@ class HomeFragment : Fragment(), RecyclerViewClickListener {
         "Mercado 3.0",
         "E-Commerce",
         "10.000,00 KZ",
-        R.drawable.mercado,
+        R.drawable.mercado_,
         false
     )
 
@@ -29,15 +29,15 @@ class HomeFragment : Fragment(), RecyclerViewClickListener {
         "Socia",
         "E-Commerce",
         "5.000,00 KZ",
-        R.drawable.socia,
+        R.drawable.socia_,
         false
     )
 
     val h3 = Historic(
         "Garçom",
-        "E-Commerce",
+        "Delivery",
         "8.500,00 KZ",
-        R.drawable.garcom,
+        R.drawable.garcom_,
         false
     )
 
@@ -45,7 +45,7 @@ class HomeFragment : Fragment(), RecyclerViewClickListener {
         "Kubinga",
         "Mobility",
         "3.500,00 KZ",
-        R.drawable.kubinga,
+        R.drawable.kubinga_,
         false
     )
 

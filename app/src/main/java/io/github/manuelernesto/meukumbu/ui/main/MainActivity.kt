@@ -3,6 +3,7 @@ package io.github.manuelernesto.meukumbu.ui.main
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import io.github.manuelernesto.meukumbu.R
 import io.github.manuelernesto.meukumbu.ui.home.HomeActivity
 import kotlinx.android.synthetic.main.activity_main.*

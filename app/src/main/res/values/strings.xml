@@ -2,4 +2,11 @@
     <string name="app_name">Meu Kumbu</string>
     <string name="begin_text">Começar</string>
     <string name="meu_kumbu_logo">Meu Kumbu Logo</string>
+
+
+    <string-array name="language_list">
+        <item>Português</item>
+        <item>Inglês</item>
+    </string-array>
+
 </resources>

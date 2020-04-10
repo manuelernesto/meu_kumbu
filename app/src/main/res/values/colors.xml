@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#492DE9</color>
     <color name="colorPrimaryDark">#454AB3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorAccent">#492DE9</color>
 
     <color name="purple">#c86dd7</color>
 
@@ -10,6 +10,9 @@
     <color name="colorPrimaryHome">#fff</color>
     <color name="colorPrimaryDarkHome">#fff</color>
     <color name="colorAccentHome">#03DAC5</color>
+
+
+    <color name="colorText">#424242</color>
 
     <color name="colorRed">#EF5350</color>
     <color name="colorGreen">#45C232</color>
