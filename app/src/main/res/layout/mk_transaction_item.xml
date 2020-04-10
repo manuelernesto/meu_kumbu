@@ -10,8 +10,8 @@
         <import type="io.github.manuelernesto.meukumbu.R" />
 
         <variable
-            name="historic"
-            type="io.github.manuelernesto.meukumbu.data.Historic" />
+            name="transaction"
+            type="io.github.manuelernesto.meukumbu.data.Transaction" />
     </data>
 
 
@@ -28,7 +28,7 @@
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:picture="@{historic.img}"
+            app:picture="@{transaction.img}"
             tools:srcCompat="@drawable/mercado_"
 
             />
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:text="@{historic.company}"
+            android:text="@{transaction.company}"
             android:textColor="@color/colorText"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -53,7 +53,7 @@
             android:id="@+id/txt_category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{historic.category}"
+            android:text="@{transaction.category}"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@+id/img"
             app:layout_constraintStart_toStartOf="@+id/txt_name"
@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
-            android:text="@{historic.values}"
+            android:text="@{transaction.values}"
             android:textColor="#EF5350"
             android:textSize="14sp"
             android:textStyle="bold"

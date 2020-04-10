@@ -8,7 +8,24 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="io.github.manuelernesto.meukumbu.ui.home.HomeFragment"
-        android:label="home_fragment"
-        tools:layout="@layout/home_fragment" />
+        android:label="@string/app_name"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/toTransactionFragment"
+            app:destination="@id/transactionFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionFragment"
+        android:name="io.github.manuelernesto.meukumbu.ui.transaction.TransactionFragment"
+        android:label="Transações"
+        tools:layout="@layout/transaction_fragment">
+        <action
+            android:id="@+id/toHomeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
 
 </navigation>

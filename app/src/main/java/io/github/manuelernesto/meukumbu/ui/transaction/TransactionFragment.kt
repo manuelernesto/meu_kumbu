@@ -1,39 +1,34 @@
-package io.github.manuelernesto.meukumbu.ui.home
+package io.github.manuelernesto.meukumbu.ui.transaction
 
-import android.os.Build
+import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.annotation.RequiresApi
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProviders
-import androidx.navigation.Navigation
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import io.github.manuelernesto.meukumbu.R
-import io.github.manuelernesto.meukumbu.data.Transaction
+import io.github.manuelernesto.meukumbu.ui.home.TransactionAdapter
 import io.github.manuelernesto.meukumbu.util.RecyclerViewClickListener
 import io.github.manuelernesto.meukumbu.util.getTransactions
 import kotlinx.android.synthetic.main.home_fragment.*
+import kotlinx.android.synthetic.main.transaction_fragment.*
 
-class HomeFragment : Fragment(), RecyclerViewClickListener {
+class TransactionFragment : Fragment(), RecyclerViewClickListener {
 
-    private lateinit var viewModel: HomeViewModel
+    private lateinit var viewModel: TransactionViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.home_fragment, container, false)
+        return inflater.inflate(R.layout.transaction_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(HomeViewModel::class.java)
-
-
-        recycler_view.also {
+        viewModel = ViewModelProvider(this).get(TransactionViewModel::class.java)
+        mk_recyclerView_transaction.also {
             it.layoutManager = LinearLayoutManager(requireContext())
             it.setHasFixedSize(true)
             it.adapter = TransactionAdapter(
@@ -41,15 +36,10 @@ class HomeFragment : Fragment(), RecyclerViewClickListener {
                 this
             )
         }
-
-        mk_btn_home.setOnClickListener {
-            val action = HomeFragmentDirections.toTransactionFragment()
-            Navigation.findNavController(it).navigate(action)
-        }
     }
 
     override fun onRecyclerViewItemClick(view: View, model: Any) {
-
+        TODO("Not yet implemented")
     }
 
 }

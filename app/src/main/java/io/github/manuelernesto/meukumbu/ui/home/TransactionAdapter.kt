@@ -5,31 +5,31 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import io.github.manuelernesto.meukumbu.R
-import io.github.manuelernesto.meukumbu.data.Historic
-import io.github.manuelernesto.meukumbu.databinding.MkHistoricItemBinding
+import io.github.manuelernesto.meukumbu.data.Transaction
+import io.github.manuelernesto.meukumbu.databinding.MkTransactionItemBinding
 import io.github.manuelernesto.meukumbu.util.RecyclerViewClickListener
 
-class HistoricAdapter(
-    private val historics: List<Historic>,
+class TransactionAdapter(
+    private val transactions: List<Transaction>,
     private val listener: RecyclerViewClickListener
-) : RecyclerView.Adapter<HistoricAdapter.HistoricViewHolder>() {
+) : RecyclerView.Adapter<TransactionAdapter.HistoricViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = HistoricViewHolder(
         DataBindingUtil.inflate(
             LayoutInflater.from(parent.context),
-            R.layout.mk_historic_item,
+            R.layout.mk_transaction_item,
             parent,
             false
         )
     )
 
     override fun onBindViewHolder(holder: HistoricViewHolder, position: Int) {
-        holder.recyclerViewBinding.historic = historics[position]
+        holder.recyclerViewBinding.transaction = transactions[position]
     }
 
 
-    override fun getItemCount() = historics.size
+    override fun getItemCount() = transactions.size
 
-    inner class HistoricViewHolder(val recyclerViewBinding: MkHistoricItemBinding) :
+    inner class HistoricViewHolder(val recyclerViewBinding: MkTransactionItemBinding) :
         RecyclerView.ViewHolder(recyclerViewBinding.root)
 }

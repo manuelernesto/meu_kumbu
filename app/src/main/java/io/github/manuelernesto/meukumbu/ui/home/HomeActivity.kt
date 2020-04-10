@@ -8,6 +8,9 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.squareup.picasso.Picasso
 import com.squareup.picasso.Target
@@ -25,15 +28,16 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         setSupportActionBar(toolbar)
-//
-//        mNavController = Navigation.findNavController(this, R.id.fragment)
-//        NavigationUI.setupWithNavController(toolbar, mNavController)
-//        NavigationUI.setupActionBarWithNavController(this, mNavController)
+
+        mNavController = Navigation.findNavController(this, R.id.fragment)
+        NavigationUI.setupWithNavController(toolbar, mNavController)
+        NavigationUI.setupActionBarWithNavController(this, mNavController)
     }
-//
-//    override fun onSupportNavigateUp(): Boolean {
-//        return NavigationUI.navigateUp(mNavController, null)
-//    }
+
+    //
+    override fun onSupportNavigateUp(): Boolean {
+        return NavigationUI.navigateUp(mNavController, null)
+    }
 
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

@@ -1,6 +1,6 @@
 package io.github.manuelernesto.meukumbu.data
 
-data class Historic(
+data class Transaction(
     val company: String,
     val category: String,
     val value: String,
