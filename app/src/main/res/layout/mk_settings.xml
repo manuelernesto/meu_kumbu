@@ -137,17 +137,17 @@
 
     <Spinner
 
-        android:textAlignment="textEnd"
         android:id="@+id/mk_lang_spinner_settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:entries="@array/language_list"
+        android:gravity="end"
+        android:textAlignment="textEnd"
         app:layout_constraintBottom_toBottomOf="@+id/textView13"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView13"
-        android:gravity="end" />
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
 
     <Switch
         android:id="@+id/mk_fingerprint_switch_settings"
@@ -390,16 +390,18 @@
         app:layout_constraintStart_toEndOf="@+id/imageButton14"
         app:layout_constraintTop_toTopOf="@+id/imageButton14" />
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/mk_img_setting"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="32dp"
+        android:src="@drawable/me"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="1dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/me" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/mk_name_settings"
