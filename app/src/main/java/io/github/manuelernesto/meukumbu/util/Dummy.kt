@@ -23,7 +23,7 @@ fun getTransactions(): ArrayList<Transaction> {
 
     val h3 = Transaction(
         "Garçom",
-        "Delivery",
+        "Entregas",
         "8.500,00 KZ",
         R.drawable.garcom_,
         false
@@ -31,7 +31,7 @@ fun getTransactions(): ArrayList<Transaction> {
 
     val h4 = Transaction(
         "Kubinga",
-        "Mobility",
+        "Mobilidade",
         "3.500,00 KZ",
         R.drawable.kubinga_,
         false

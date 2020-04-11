@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:fontFamily="monospace"
-            android:text="Proprietario"
+            android:text="Proprietário"
             android:textColor="@android:color/white"
             app:layout_constraintBottom_toTopOf="@+id/textView4"
             app:layout_constraintStart_toStartOf="@+id/textView7" />

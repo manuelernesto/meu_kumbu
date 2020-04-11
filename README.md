@@ -9,8 +9,8 @@
 ## 📸 LightSide
 |                                      |                                      | 
 | :----------------------------------: | :----------------------------------: |
-| <img width="250px"  src="https://i.imgur.com/doMUSM1.png"> | <img width="250px"  src="https://i.imgur.com/1BtUGC6.png"> |
-| <img width="250px"  src="https://i.imgur.com/lbPV3lP.png"> | <img width="250px"  src="https://i.imgur.com/3LLoXUZ.png"> |
+| <img width="250px"  src="https://imgur.com/SkryGto.png"> | <img width="250px"  src="https://imgur.com/vTYXaxD.png"> |
+| <img width="250px"  src="https://imgur.com/7MFVSwf.png"> | <img width="250px"  src="https://imgur.com/J1XKSiA.png"> |
 
 
 ### Show some :heart: and star the repo to support the project
