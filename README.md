@@ -1,7 +1,7 @@
 # Meu Kumbu - My Money 
 
 <p align="center">
-<img width="800px"  src="https://imgur.com/MzXDDvQ">
+<img width="800px"  src="https://imgur.com/MzXDDvQ.png">
 </p>
 
 <p align="center"><a href="#getting-started">:rocket: Get Started</a></p>
