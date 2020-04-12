@@ -37,6 +37,11 @@ class CardInfoFragment : Fragment() {
             val action = CardInfoFragmentDirections.toPaymentFragment()
             Navigation.findNavController(it).navigate(action)
         }
+
+        mk_btn_electric.setOnClickListener {
+            val action = CardInfoFragmentDirections.toSendFragment()
+            Navigation.findNavController(it).navigate(action)
+        }
     }
 
 

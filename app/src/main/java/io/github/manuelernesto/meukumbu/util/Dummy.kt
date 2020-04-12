@@ -51,7 +51,7 @@ fun getPayments(): ArrayList<Payment> {
     )
 
     val p2 = Payment(
-        "Ende",
+        "ENDE",
         "Energia",
         R.drawable.ende
     )

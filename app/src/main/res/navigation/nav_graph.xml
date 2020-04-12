@@ -43,6 +43,9 @@
         <action
             android:id="@+id/toPaymentFragment"
             app:destination="@id/paymentFragment" />
+        <action
+            android:id="@+id/toSendFragment"
+            app:destination="@id/sendFragment" />
     </fragment>
     <fragment
         android:id="@+id/paymentFragment"
@@ -51,6 +54,15 @@
         tools:layout="@layout/payment_fragment">
         <action
             android:id="@+id/action_paymentFragment_to_cardInfoFragment"
+            app:destination="@id/cardInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendFragment"
+        android:name="io.github.manuelernesto.meukumbu.ui.send.SendFragment"
+        android:label="Enviar Dinheiro"
+        tools:layout="@layout/send_fragment">
+        <action
+            android:id="@+id/action_sendFragment_to_cardInfoFragment"
             app:destination="@id/cardInfoFragment" />
     </fragment>
 
