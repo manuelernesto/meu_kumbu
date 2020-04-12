@@ -3,6 +3,7 @@ package io.github.manuelernesto.meukumbu.util
 import io.github.manuelernesto.meukumbu.R
 import io.github.manuelernesto.meukumbu.data.Transaction
 
+
 fun getTransactions(): ArrayList<Transaction> {
 
     val h1 = Transaction(

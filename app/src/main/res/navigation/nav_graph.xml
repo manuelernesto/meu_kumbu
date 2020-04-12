@@ -15,6 +15,11 @@
             app:destination="@id/transactionFragment"
             app:enterAnim="@anim/fragment_fade_enter"
             app:exitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/toCardInfoFragment"
+            app:destination="@id/cardInfoFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
     </fragment>
     <fragment
         android:id="@+id/transactionFragment"
@@ -26,6 +31,15 @@
             app:destination="@id/homeFragment"
             app:enterAnim="@anim/fragment_fade_enter"
             app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardInfoFragment"
+        android:name="io.github.manuelernesto.meukumbu.ui.cardInfo.CardInfoFragment"
+        android:label="Info Cartão"
+        tools:layout="@layout/card_info_fragment">
+        <action
+            android:id="@+id/action_cardInfoFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
 
 </navigation>

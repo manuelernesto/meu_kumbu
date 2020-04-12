@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.cardInfo.CardInfoFragment">
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pagamento"
+        android:textColor="#37474F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/mk_btn_payment"
+        app:layout_constraintStart_toStartOf="@+id/mk_btn_payment"
+        app:layout_constraintTop_toBottomOf="@+id/mk_btn_payment" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Carregar"
+        android:textColor="#37474F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/mk_btn_recharge"
+        app:layout_constraintStart_toStartOf="@+id/mk_btn_recharge"
+        app:layout_constraintTop_toBottomOf="@+id/mk_btn_recharge" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Requisitar"
+        android:textColor="#37474F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/mk_btn_request"
+        app:layout_constraintStart_toStartOf="@+id/mk_btn_request"
+        app:layout_constraintTop_toBottomOf="@+id/mk_btn_request" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/meu_kumbu_card_bg_gray">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="monospace"
+                android:text="10.000,00 Kz"
+                android:textColor="@color/colorPrimaryHome"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="monospace"
+                android:text="Saldo"
+                android:textColor="@color/colorPrimaryHome"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="monospace"
+                android:text="****  ****  ****  1234"
+                android:textColor="@color/colorPrimaryHome"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="56dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/emis"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Serviços"
+        android:textColor="#37474F"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/mk_btn_send"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <ImageButton
+        android:id="@+id/mk_btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/send"
+        app:layout_constraintEnd_toStartOf="@+id/mk_btn_request"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Enviar"
+        android:textColor="#37474F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/mk_btn_send"
+        app:layout_constraintStart_toStartOf="@+id/mk_btn_send"
+        app:layout_constraintTop_toBottomOf="@+id/mk_btn_send" />
+
+    <ImageButton
+        android:id="@+id/mk_btn_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/request"
+        app:layout_constraintEnd_toStartOf="@+id/mk_btn_recharge"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mk_btn_send"
+        app:layout_constraintTop_toTopOf="@+id/mk_btn_send" />
+
+    <ImageButton
+        android:id="@+id/mk_btn_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/recharge"
+        app:layout_constraintEnd_toStartOf="@+id/mk_btn_payment"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mk_btn_request"
+        app:layout_constraintTop_toTopOf="@+id/mk_btn_request" />
+
+    <ImageButton
+        android:id="@+id/mk_btn_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/payment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mk_btn_recharge"
+        app:layout_constraintTop_toTopOf="@+id/mk_btn_recharge" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

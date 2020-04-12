@@ -16,6 +16,7 @@ import io.github.manuelernesto.meukumbu.data.Transaction
 import io.github.manuelernesto.meukumbu.util.RecyclerViewClickListener
 import io.github.manuelernesto.meukumbu.util.getTransactions
 import kotlinx.android.synthetic.main.home_fragment.*
+import kotlinx.android.synthetic.main.mk_card.*
 
 class HomeFragment : Fragment(), RecyclerViewClickListener {
 
@@ -44,6 +45,11 @@ class HomeFragment : Fragment(), RecyclerViewClickListener {
 
         mk_btn_home.setOnClickListener {
             val action = HomeFragmentDirections.toTransactionFragment()
+            Navigation.findNavController(it).navigate(action)
+        }
+
+        mk_card.setOnClickListener {
+            val action = HomeFragmentDirections.toCardInfoFragment()
             Navigation.findNavController(it).navigate(action)
         }
     }
