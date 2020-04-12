@@ -37,9 +37,9 @@ Meu Kumbu (Means my money )is a model app that people can use to build their own
 
 - Home 
 - Transactions 
-- Send Money (Upcoming)
+- Send Money
 - Make payment (Upcoming)
-- Card Info (Upcoming)
+- Card Info 
 - DarkMode (Upcoming)
 - Multi-language (Upcoming)
 - Read QRCode (Upcoming)
