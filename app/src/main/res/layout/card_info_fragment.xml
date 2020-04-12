@@ -14,9 +14,9 @@
         android:text="Pagamento"
         android:textColor="#37474F"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/mk_btn_payment"
-        app:layout_constraintStart_toStartOf="@+id/mk_btn_payment"
-        app:layout_constraintTop_toBottomOf="@+id/mk_btn_payment" />
+        app:layout_constraintEnd_toEndOf="@+id/mk_btn_other"
+        app:layout_constraintStart_toStartOf="@+id/mk_btn_other"
+        app:layout_constraintTop_toBottomOf="@+id/mk_btn_other" />
 
     <TextView
         android:id="@+id/textView25"
@@ -26,9 +26,9 @@
         android:text="Carregar"
         android:textColor="#37474F"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/mk_btn_recharge"
-        app:layout_constraintStart_toStartOf="@+id/mk_btn_recharge"
-        app:layout_constraintTop_toBottomOf="@+id/mk_btn_recharge" />
+        app:layout_constraintEnd_toEndOf="@+id/mk_btn_internet"
+        app:layout_constraintStart_toStartOf="@+id/mk_btn_internet"
+        app:layout_constraintTop_toBottomOf="@+id/mk_btn_internet" />
 
     <TextView
         android:id="@+id/textView22"
@@ -38,9 +38,9 @@
         android:text="Requisitar"
         android:textColor="#37474F"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/mk_btn_request"
-        app:layout_constraintStart_toStartOf="@+id/mk_btn_request"
-        app:layout_constraintTop_toBottomOf="@+id/mk_btn_request" />
+        app:layout_constraintEnd_toEndOf="@+id/mk_btn_water"
+        app:layout_constraintStart_toStartOf="@+id/mk_btn_water"
+        app:layout_constraintTop_toBottomOf="@+id/mk_btn_water" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -130,16 +130,16 @@
         android:text="Serviços"
         android:textColor="#37474F"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/mk_btn_send"
+        app:layout_constraintStart_toStartOf="@+id/mk_btn_electric"
         app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
     <ImageButton
-        android:id="@+id/mk_btn_send"
+        android:id="@+id/mk_btn_electric"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="@drawable/send"
-        app:layout_constraintEnd_toStartOf="@+id/mk_btn_request"
+        app:layout_constraintEnd_toStartOf="@+id/mk_btn_water"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
@@ -152,39 +152,39 @@
         android:text="Enviar"
         android:textColor="#37474F"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/mk_btn_send"
-        app:layout_constraintStart_toStartOf="@+id/mk_btn_send"
-        app:layout_constraintTop_toBottomOf="@+id/mk_btn_send" />
+        app:layout_constraintEnd_toEndOf="@+id/mk_btn_electric"
+        app:layout_constraintStart_toStartOf="@+id/mk_btn_electric"
+        app:layout_constraintTop_toBottomOf="@+id/mk_btn_electric" />
 
     <ImageButton
-        android:id="@+id/mk_btn_request"
+        android:id="@+id/mk_btn_water"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/request"
-        app:layout_constraintEnd_toStartOf="@+id/mk_btn_recharge"
+        app:layout_constraintEnd_toStartOf="@+id/mk_btn_internet"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/mk_btn_send"
-        app:layout_constraintTop_toTopOf="@+id/mk_btn_send" />
+        app:layout_constraintStart_toEndOf="@+id/mk_btn_electric"
+        app:layout_constraintTop_toTopOf="@+id/mk_btn_electric" />
 
     <ImageButton
-        android:id="@+id/mk_btn_recharge"
+        android:id="@+id/mk_btn_internet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/recharge"
-        app:layout_constraintEnd_toStartOf="@+id/mk_btn_payment"
+        app:layout_constraintEnd_toStartOf="@+id/mk_btn_other"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/mk_btn_request"
-        app:layout_constraintTop_toTopOf="@+id/mk_btn_request" />
+        app:layout_constraintStart_toEndOf="@+id/mk_btn_water"
+        app:layout_constraintTop_toTopOf="@+id/mk_btn_water" />
 
     <ImageButton
-        android:id="@+id/mk_btn_payment"
+        android:id="@+id/mk_btn_other"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/payment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/mk_btn_recharge"
-        app:layout_constraintTop_toTopOf="@+id/mk_btn_recharge" />
+        app:layout_constraintStart_toEndOf="@+id/mk_btn_internet"
+        app:layout_constraintTop_toTopOf="@+id/mk_btn_internet" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

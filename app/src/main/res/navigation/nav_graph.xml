@@ -40,6 +40,18 @@
         <action
             android:id="@+id/action_cardInfoFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/toPaymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="io.github.manuelernesto.meukumbu.ui.payment.PaymentFragment"
+        android:label="Pagamentos"
+        tools:layout="@layout/payment_fragment">
+        <action
+            android:id="@+id/action_paymentFragment_to_cardInfoFragment"
+            app:destination="@id/cardInfoFragment" />
     </fragment>
 
 </navigation>
