@@ -4,6 +4,9 @@
     <bytecodeTargetLevel>
       <module name="app" target="1.8" />
       <module name="Meu_Kumbu.app" target="1.8" />
+      <module name="Meu_Kumbu.appAndroid" target="1.8" />
+      <module name="Meu_Kumbu.SharedCode.androidMain" target="1.6" />
+      <module name="Meu_Kumbu.SharedCode.androidTest" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

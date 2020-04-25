@@ -1,2 +1,4 @@
-include ':app'
 rootProject.name = "Meu Kumbu"
+
+include ':appAndroid'
+include ':SharedCode'
