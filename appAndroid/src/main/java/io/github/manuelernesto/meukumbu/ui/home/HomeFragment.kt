@@ -9,8 +9,9 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import io.github.manuelernesto.meukumbu.R
+import io.github.manuelernesto.meukumbu.sharedcode.util.getDummyTransactions
 import io.github.manuelernesto.meukumbu.util.RecyclerViewClickListener
-import io.github.manuelernesto.meukumbu.util.getTransactions
+import io.github.manuelernesto.meukumbu.util.imgs
 import kotlinx.android.synthetic.main.home_fragment.*
 import kotlinx.android.synthetic.main.mk_card.*
 
@@ -34,7 +35,7 @@ class HomeFragment : Fragment(), RecyclerViewClickListener {
             it.layoutManager = LinearLayoutManager(requireContext())
             it.setHasFixedSize(true)
             it.adapter = TransactionAdapter(
-                getTransactions(),
+                getDummyTransactions(imgs = imgs),
                 this
             )
         }

@@ -1,17 +1,17 @@
 package io.github.manuelernesto.meukumbu.ui.transaction
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import io.github.manuelernesto.meukumbu.R
+import io.github.manuelernesto.meukumbu.sharedcode.util.getDummyTransactions
 import io.github.manuelernesto.meukumbu.ui.home.TransactionAdapter
 import io.github.manuelernesto.meukumbu.util.RecyclerViewClickListener
-import io.github.manuelernesto.meukumbu.util.getTransactions
-import kotlinx.android.synthetic.main.home_fragment.*
+import io.github.manuelernesto.meukumbu.util.imgs
 import kotlinx.android.synthetic.main.transaction_fragment.*
 
 class TransactionFragment : Fragment(), RecyclerViewClickListener {
@@ -32,7 +32,7 @@ class TransactionFragment : Fragment(), RecyclerViewClickListener {
             it.layoutManager = LinearLayoutManager(requireContext())
             it.setHasFixedSize(true)
             it.adapter = TransactionAdapter(
-                getTransactions(),
+                getDummyTransactions(imgs = imgs),
                 this
             )
         }

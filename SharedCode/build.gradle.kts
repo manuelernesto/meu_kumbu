@@ -7,10 +7,10 @@ plugins {
 kotlin {
     //select iOS target platform depending on the Xcode environment variables
     val iOSTarget: (String, KotlinNativeTarget.() -> Unit) -> KotlinNativeTarget =
-        if (System.getenv("SDK_NAME")?.startsWith("iphoneos") == true)
-            ::iosArm64
-        else
-            ::iosX64
+            if (System.getenv("SDK_NAME")?.startsWith("iphoneos") == true)
+                ::iosArm64
+            else
+                ::iosX64
 
     iOSTarget("ios") {
         binaries {
@@ -39,8 +39,8 @@ val packForXcode by tasks.creating(Sync::class) {
     /// variables set by Xcode build
     val mode = System.getenv("CONFIGURATION") ?: "DEBUG"
     val framework = kotlin.targets
-        .getByName<KotlinNativeTarget>("ios")
-        .binaries.getFramework(mode)
+            .getByName<KotlinNativeTarget>("ios")
+            .binaries.getFramework(mode)
     inputs.property("mode", mode)
     dependsOn(framework.linkTask)
 

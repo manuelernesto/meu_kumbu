@@ -8,10 +8,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import io.github.manuelernesto.meukumbu.R
-import io.github.manuelernesto.meukumbu.ui.home.TransactionAdapter
 import io.github.manuelernesto.meukumbu.util.RecyclerViewClickListener
 import io.github.manuelernesto.meukumbu.util.getPayments
-import io.github.manuelernesto.meukumbu.util.getTransactions
 import kotlinx.android.synthetic.main.payment_fragment.*
 
 class PaymentFragment : Fragment(), RecyclerViewClickListener {

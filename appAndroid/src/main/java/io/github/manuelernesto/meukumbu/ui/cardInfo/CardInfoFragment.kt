@@ -1,19 +1,14 @@
 package io.github.manuelernesto.meukumbu.ui.cardInfo
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
-import androidx.recyclerview.widget.LinearLayoutManager
 import io.github.manuelernesto.meukumbu.R
-import io.github.manuelernesto.meukumbu.ui.home.TransactionAdapter
-import io.github.manuelernesto.meukumbu.util.RecyclerViewClickListener
-import io.github.manuelernesto.meukumbu.util.getTransactions
 import kotlinx.android.synthetic.main.card_info_fragment.*
-import kotlinx.android.synthetic.main.home_fragment.*
 
 class CardInfoFragment : Fragment() {
 

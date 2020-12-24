@@ -1,16 +1,15 @@
 package io.github.manuelernesto.meukumbu.sharedcode.util
+
 import io.github.manuelernesto.meukumbu.sharedcode.data.Transaction
 
 
-expect fun getIcons(): List<Int>
-
-fun getTransactions(): ArrayList<Transaction> {
+fun getDummyTransactions(imgs: List<Int>): ArrayList<Transaction> {
 
     val h1 = Transaction(
         "Mercado 3.0",
         "E-Commerce",
         "10.000,00 KZ",
-        getIcons()[0],
+        imgs[0],
         false
     )
 
@@ -18,7 +17,7 @@ fun getTransactions(): ArrayList<Transaction> {
         "Socia",
         "E-Commerce",
         "5.000,00 KZ",
-        getIcons()[0],
+        imgs[1],
         false
     )
 
@@ -26,7 +25,7 @@ fun getTransactions(): ArrayList<Transaction> {
         "Garçom",
         "Entregas",
         "8.500,00 KZ",
-        getIcons()[0],
+        imgs[2],
         false
     )
 
@@ -34,7 +33,7 @@ fun getTransactions(): ArrayList<Transaction> {
         "Kubinga",
         "Mobilidade",
         "3.500,00 KZ",
-        getIcons()[0],
+        imgs[3],
         false
     )
 
